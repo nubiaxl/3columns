@@ -1,0 +1,119 @@
+.row {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+
+}
+
+
+
+}
+
+
+
+#chicken  {
+	background-color: #77ffff;
+	border: 1px solid black;
+	width: 290px;
+	float: left;
+	padding: 5px 15px;
+
+}
+
+#beef {
+	background-color: red;
+	border: 1px solid black;
+	width: 294px; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#sushi {
+	background-color: yellow;
+	border: 1px solid black;
+	width: 270px;
+	padding: 5px 15px;
+	float: left;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+.row {
+		width: 94%;
+	}
+	#chicken {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#beef {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#sushi {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	header{
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#chicken {
+		width: auto;
+		float: none;
+	}
+	
+	#beef {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	#sushi {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#sushi{
+		display: none;
+	}
+
+}
+
+
+#chicken, #beef, #sushi {
+	background: ff00ff;
+}
+
+}
+header, #chicken, #beef, #sushi {
+	margin-bottom: 5px;
+}
+
+.row, header, #chicken, #beef, #sushi{
+	border: solid 1px #ccc;
+}
